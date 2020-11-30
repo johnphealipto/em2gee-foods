@@ -109,6 +109,58 @@ p, li, a {
 /*** END PANEL ***/
 
 
+/*** TESTIMONIALS ***/
+.slider-area {
+  /*background-color: #111;*/
+  padding-top: 50px 0;
+  position: relative;
+  margin: 100px 0;
+}
+.slider-area .slider-header h3 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+.slider-area .slider-header {
+  margin-bottom: 27px;
+}
+.slider-area .slider-header p {
+  color: red;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-top: -9px;
+}
+.img-area {
+  width: 130px;
+  height: 130px;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.img-area img {
+  width: 100%;
+}
+.carousel-caption {
+  color: #000;
+  position: static;
+  margin-top: -15px;
+}
+.carousel-caption p {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  width: 70%;
+  margin: auto;
+}
+.carousel-caption h5 {
+  font-weight: bold;
+} 
+.carousel-caption h6 {
+  font-weight: lighter;
+  margin-top: -12px;
+} 
+/*** END TESTIMONIALS ***/
+
+
 /*** FOOTER ***/
 hr {
   width: 50%;
@@ -123,6 +175,16 @@ hr {
 }
 .footer p span {
   font-size: 1.3rem;
+}
+footer .connect {
+  margin-top: -17px; 
+}
+footer .connect .connect-icon {
+  margin-right: 10px;
+}
+.connect .connect-icon i {
+  color: #111;
+  width: 15px;
 }
 /*** END FOOTER ***/
 
