@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 
 html, body {
@@ -15,24 +16,35 @@ a {
   text-decoration: none;
 }
 
-p, li, a {
-  /*font-size: 14px;*/
+
+.quick-contact a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.quick-contact a i {
+  color: red;
+}
+.quick-contact a:hover {
+  color: red;
 }
 
 
 /*** MENU BUTTON ***/
 .menu-btn {
-  position: fixed;
-  right: 5px;
-  top: 35px;
-  width: 25%;
+  position: absolute;
+  right: 10px;
+  width: 17%;
 }
 .hamburger .line{
-  width: 40px;
-  height: 4px;
+  width: 36px;
+  height: 3px;
   background-color: #000;
   display: block;
-  margin: 8px auto;
+  margin: 6px auto;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -111,10 +123,20 @@ p, li, a {
 
 /*** TESTIMONIALS ***/
 .slider-area {
-  /*background-color: #111;*/
+  background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.1) 50%) ;
   padding-top: 50px 0;
   position: relative;
   margin: 100px 0;
+}
+.semi-circle {
+  position: absolute;
+  height: 100px; 
+  width: 200px; 
+  border-radius:  0 0 150px 150px;
+  padding: 0;
+  margin: 0;
+  background-image: radial-gradient(rgb(255,0,0) 0.1rem, transparent 1px);
+  background-size: 20px 20px;
 }
 .slider-area .slider-header h3 {
   font-size: 1.5rem;
@@ -153,18 +175,22 @@ p, li, a {
 }
 .carousel-caption h5 {
   font-weight: bold;
+  margin-top: 5px;
 } 
 .carousel-caption h6 {
   font-weight: lighter;
   margin-top: -12px;
-} 
+}
+.carousel-control-prev-icon {
+  background-image: url('img/long-arrow-alt-left-solid.svg');
+}
+.carousel-control-next-icon {
+  background-image: url('img/long-arrow-alt-right-solid.svg');
+}
 /*** END TESTIMONIALS ***/
 
 
 /*** FOOTER ***/
-hr {
-  width: 50%;
-}
 .footer-menu a {
   color: #000;
   display: block;
@@ -185,6 +211,11 @@ footer .connect .connect-icon {
 .connect .connect-icon i {
   color: #111;
   width: 15px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.connect .connect-icon i:hover {
+  color: red;
 }
 /*** END FOOTER ***/
 
@@ -194,7 +225,11 @@ footer .connect .connect-icon {
 /*No media query for `xs` since this is the default in Bootstrap*/
 
 /*Extra small devices {xs} (portrait phones, less than 576px)*/
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  .semi-circle {
+    display: none;
+  }
+}
 
 
 /*Small devices {sm} (landscape phones, 576px and up)*/
