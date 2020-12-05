@@ -12,11 +12,11 @@ html, body {
   scroll-behavior: smooth;
 }
 
-a {
-  text-decoration: none;
+
+.quick-contact {
+  margin-bottom: -7px;
+  text-align: center;
 }
-
-
 .quick-contact a {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
@@ -33,7 +33,14 @@ a {
 }
 
 
-/*** MENU BUTTON ***/
+/*** HEADER - MENU BUTTON ***/
+header {
+  margin-top: -10px;
+  margin-bottom: -17px;
+}
+header img {
+  width: 85%;
+}
 .menu-btn {
   position: absolute;
   right: 10px;
@@ -97,33 +104,83 @@ a {
   -o-transform: translateY(-13px) rotate(-45deg);
   transform: translateY(-13px) rotate(-45deg);
 }
-/*** END MENU BUTTON ***/
+/*** HEADER - END MENU BUTTON ***/
 
 
 /*** PANEL ***/
 .panel {
-  padding: 50px;
+  padding: 40px;
   display: none;
 }
-.panel div a {
+.panel .panel-list a {
   color: #000;
   display: block;
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-decoration: none;
-  margin-bottom: 17px;
-  transition: 0.5s ease all;
+  margin-bottom: 12px;
+  transition: 0.4s ease all;
 }
 .panel div a:hover {
-  transform: scaleX(1.3);
+  transform: scaleX(1.4);
   transition: 0.4s ease all;
+}
+.panel .panel-footer {
+  margin-top: 22vh;
 }
 /*** END PANEL ***/
 
 
+/*** HERO CAROUSEL ***/
+.hero-carousel {
+  padding-top: 50px 0;
+  position: relative;
+  margin: 30px 0;
+}
+.hero-carousel .carousel-item {
+  max-height: 520px;
+}
+.hero-img {
+  height: 487px;
+  margin: auto;
+  overflow: hidden;
+}
+.hero-img img {
+  width: 100%;
+  /*opacity: 0.9;*/
+}
+.hero-carousel .carousel-caption {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.hero-carousel .carousel-caption p {
+  color: whitesmoke;
+  font-size: 3.2rem;
+  font-weight: bold; 
+}
+.hero-carousel .carousel-caption button {
+  background-color: #f5ba31;
+  color: #111;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+}
+.hero-carousel .carousel-caption button:hover {
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+/*** END HERO CAROUSEL ***/
+
+
 /*** TESTIMONIALS ***/
 .slider-area {
-  background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.1) 50%) ;
+  background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.1) 50%);
   padding-top: 50px 0;
   position: relative;
   margin: 100px 0;
@@ -162,30 +219,30 @@ a {
 .img-area img {
   width: 100%;
 }
-.carousel-caption {
+.testimonials .carousel-caption {
   color: #000;
   position: static;
   margin-top: -15px;
 }
-.carousel-caption p {
+.testimonials .carousel-caption p {
   font-size: 1.2rem;
   letter-spacing: 1px;
   width: 70%;
   margin: auto;
 }
-.carousel-caption h5 {
+.testimonials .carousel-caption h5 {
   font-weight: bold;
   margin-top: 5px;
 } 
-.carousel-caption h6 {
+.testimonials .carousel-caption h6 {
   font-weight: lighter;
   margin-top: -12px;
 }
-.carousel-control-prev-icon {
-  background-image: url('img/long-arrow-alt-left-solid.svg');
+.testimonials .carousel-control-prev-icon {
+  background-image: url('../img/long-arrow-alt-left-solid.svg');
 }
-.carousel-control-next-icon {
-  background-image: url('img/long-arrow-alt-right-solid.svg');
+.testimonials .carousel-control-next-icon {
+  background-image: url('../img/long-arrow-alt-right-solid.svg');
 }
 /*** END TESTIMONIALS ***/
 
@@ -229,6 +286,21 @@ footer .connect .connect-icon {
   .semi-circle {
     display: none;
   }
+
+  .hero-carousel .carousel-item {
+    max-height: 180px;
+  }
+  /*.hero-carousel .carousel-caption {
+    top: 30%;
+    left: 50%;
+  }
+  .hero-carousel .carousel-caption p {
+    font-size: 1.3rem;
+  }
+  .hero-carousel .carousel-caption button {
+    font-size: .6rem;
+    margin-top: -9px;
+  }*/
 }
 
 
