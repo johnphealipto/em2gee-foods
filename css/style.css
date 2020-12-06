@@ -155,11 +155,21 @@ header img {
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-name: caption;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+@keyframes caption {
+  50% {
+    opacity: 0.5;
+    top: 43%;
+  }
 }
 .hero-carousel .carousel-caption p {
-  color: whitesmoke;
+  color: #FFFFE0;
   font-size: 3.2rem;
-  font-weight: bold; 
+  font-weight: bold;
+  text-shadow: 2px 2px 4px #000;
 }
 .hero-carousel .carousel-caption button {
   background-color: #f5ba31;
@@ -167,6 +177,7 @@ header img {
   letter-spacing: 1px;
   font-size: 1.5rem;
   font-weight: bold;
+  /*box-shadow: 2px 2px 9px #000000;*/
   transition: all 0.4s ease-out;
   -webkit-transition: all 0.4s ease-out;
 }
@@ -176,6 +187,56 @@ header img {
   -webkit-transition: all 0.3s ease-in-out;
 }
 /*** END HERO CAROUSEL ***/
+
+
+/*** BACKGROUND DECOR ***/
+.decor {
+  position: absolute;
+  /*top: 0;
+  left: 0;*/
+  width: 70px;
+  height: 180px;
+  border-radius: 0 50% 50% 0;
+  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 199, 44, 0.1);
+  /*transform: translateX(100%);*/
+  /*animation-name: decor;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;*/
+}
+/*** END BACKGROUND DECOR ***/
+
+
+/*** BRIEF INFO ***/
+.brief-info {
+  margin-top: 7vh;
+}
+.brief-info .container-fluid { 
+  /*display:flex;*/
+  /*text-align:center;*/
+}
+.brief-info .info { 
+  /*order: 1;*/
+}
+.brief-info .img img {
+  border-radius: 20%;
+  box-shadow: 1px 1px 3px #000;
+}
+.brief-info .img:after {
+  content:'';
+  background: #FFFFE0;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 26%;
+  height: 18vh;
+}
+.brief-info .img:after {
+  top: auto;
+  bottom: -10px;
+  border-radius: 10% 100% 10% 100%;
+}
+/*** END BRIEF INFO ***/
 
 
 /*** TESTIMONIALS ***/
@@ -290,17 +351,6 @@ footer .connect .connect-icon {
   .hero-carousel .carousel-item {
     max-height: 180px;
   }
-  /*.hero-carousel .carousel-caption {
-    top: 30%;
-    left: 50%;
-  }
-  .hero-carousel .carousel-caption p {
-    font-size: 1.3rem;
-  }
-  .hero-carousel .carousel-caption button {
-    font-size: .6rem;
-    margin-top: -9px;
-  }*/
 }
 
 
