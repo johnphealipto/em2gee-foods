@@ -218,6 +218,8 @@ header img {
 .brief-info .info { 
   /*order: 1;*/
 }
+.brief-info .img {
+}
 .brief-info .img img {
   border-radius: 20%;
   box-shadow: 1px 1px 3px #000;
