@@ -223,6 +223,17 @@ header img {
 .brief-info .img img {
   border-radius: 20%;
   box-shadow: 1px 1px 3px #000;
+  -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
 }
 .brief-info .img:after {
   content:'';
@@ -248,13 +259,17 @@ header img {
   position: relative;
   margin: 100px 0;
 }
+.slider-area .container {
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+}
 .semi-circle {
   position: absolute;
   height: 100px; 
   width: 200px; 
   border-radius:  0 0 150px 150px;
   padding: 0;
-  margin: 0;
+  margin-left: 5rem;
   background-image: radial-gradient(rgb(255,0,0) 0.1rem, transparent 1px);
   background-size: 20px 20px;
 }
@@ -263,7 +278,7 @@ header img {
   letter-spacing: 1px;
 }
 .slider-area .slider-header {
-  margin-bottom: 27px;
+  padding-bottom: 1.5rem;
 }
 .slider-area .slider-header p {
   color: red;
