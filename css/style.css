@@ -13,6 +13,7 @@ html, body {
 }
 
 
+/*** QUICK CONTACT ***/
 .quick-contact {
   margin-bottom: -7px;
   text-align: center;
@@ -31,6 +32,7 @@ html, body {
 .quick-contact a:hover {
   color: red;
 }
+/*** END QUICK CONTACT ***/
 
 
 /*** HEADER - MENU BUTTON ***/
@@ -131,6 +133,8 @@ header img {
 /*** END PANEL ***/
 
 
+
+/********** HOME **********/
 /*** HERO CAROUSEL ***/
 .hero-carousel {
   padding-top: 50px 0;
@@ -187,8 +191,6 @@ header img {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
-/*** END HERO CAROUSEL ***/
-
 
 /*** BACKGROUND DECOR ***/
 .decor {
@@ -205,8 +207,6 @@ header img {
   animation-duration: 4s;
   animation-iteration-count: infinite;*/
 }
-/*** END BACKGROUND DECOR ***/
-
 
 /*** BRIEF INFO ***/
 .brief-info {
@@ -254,8 +254,6 @@ header img {
   bottom: -10px;
   border-radius: 10% 100% 10% 100%;
 }
-/*** END BRIEF INFO ***/
-
 
 /*** TESTIMONIALS ***/
 .slider-area {
@@ -328,6 +326,27 @@ header img {
   background-image: url('../img/long-arrow-alt-right-solid.svg');
 }
 /*** END TESTIMONIALS ***/
+/********** END OF HOME **********/
+
+
+
+/********** CONTACT US **********/
+.hero-contact {
+  padding-top: 50px 0;
+  position: relative;
+  margin: 30px 0;
+}
+.contact-img {
+  height: 87px;
+  margin: auto;
+  overflow: hidden;
+}
+.contact-img img {
+  width: 100%;
+  /*opacity: 0.9;*/
+}
+/********** END CONTACT US **********/
+
 
 
 /*** FOOTER ***/
