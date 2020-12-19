@@ -62,9 +62,9 @@
   <div class="main" id="mainContent">
 
     <!-- Intro To Contact -->
-    <div class="hero-contact">
-      <div class="contact-img"></div>
-      <div class="contact-img-text">
+    <div class="page-hero">
+      <div class="page-hero-img"></div>
+      <div class="page-hero-img-text">
         <h3>Contact</h3>
         <div>
           <a href="index.html" class="pr-2">Home</a>
@@ -75,44 +75,28 @@
     </div>
 
     <!-- Contact Form -->
-      <div class="contactme">
-        <form name="contact" data-netlify="true" id="contactme" method="POST">
-          <div class="input-container">
-            <i class="fa fa-user fa-3x icon"></i>
-            <input
-              name="sender-name"
-              class="input-field"
-              type="text"
-              id="name"
-              placeholder="Company Name/Name"
-              required
-            />
+    <div class="mainContact row">
+      <div class="contact-form mx-sm-5 col">
+        <form>
+          <div class="form-group mb-2 col-sm-6 col-md-6">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
           </div>
-          <div class="input-container">
-            <i class="fa fa-envelope fa-3x icon"></i>
-            <input
-              name="email"
-              class="input-field"
-              type="email"
-              id="email"
-              placeholder="Your email"
-              required
-            />
+          <div class="form-group mb-2 col-sm-6 col-md-6">
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
           </div>
-          <div class="input-container">
-            <textarea
-              class="input-field"
-              name="text"
-              id="emailContent"
-              placeholder="Write something here..."
-              required
-            ></textarea>
+          <div class="form-group mb-2 col-md-12">
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
           </div>
-          <div data-netlify-recaptcha="true"></div>
-          <button type="submit" id="submit" class="btn">Send</button>
+          <div class="form-group mb-2 col-md-12">
+            <textarea class="form-control box-outline-none" id="exampleFormControlTextarea1" rows="5" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning">Submit</button>
         </form>
       </div>
-
+      <div class="contact-address col">
+        here
+      </div>  
+    </div>
 
 
     <!-- FOOTER -->

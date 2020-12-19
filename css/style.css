@@ -3,12 +3,12 @@
 
 
 html, body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   background: #FFFFE0;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -325,19 +325,18 @@ header img {
 .testimonials .carousel-control-next-icon {
   background-image: url('../img/long-arrow-alt-right-solid.svg');
 }
-/*** END TESTIMONIALS ***/
 /********** END OF HOME **********/
 
 
 
-/********** CONTACT US **********/
-.hero-contact {
+/*** PAGE INTRO [BRIDGE] ***/
+.page-hero {
   background-color: black;
   padding-top: 50px 0;
   position: relative;
   margin: 30px 0;
 }
-.contact-img {
+.page-hero-img {
   background-image: url("../img/bean.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -348,7 +347,7 @@ header img {
   overflow: hidden;
   opacity: 0.2;
 }
-.contact-img-text {
+.page-hero-img-text {
   color: #FFFFE0 !important;
   font-weight: bold;
   text-align: center;
@@ -357,22 +356,49 @@ header img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.contact-img-text h3 {
+.page-hero-img-text h3 {
   font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 3px;
 }
-.contact-img-text div {
+.page-hero-img-text div {
   font-size: 1.3rem;
   margin-top: -10px;
   letter-spacing: 1px;
 }
-.contact-img-text div a {
+.page-hero-img-text div a {
  text-decoration: none;
  color: #FFFFE0;
 }
-.contact-img-text div span {
+.page-hero-img-text div span {
   color: gray;
+}
+/*** END OF PAGE INTRO [BRIDGE] ***/
+
+
+
+/********** CONTACT US **********/
+
+input[type="text"], input[type="email"], textarea {
+  background-color: #FFFFE0;
+  width: 100%;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  background-color: #FFFFE0;
+  box-shadow: none;
+  border: 2px solid red
+}
+.contact-form input::placeholder {
+  color: black;
+}
+.contact-form input::-webkit-placeholder {
+  font-weight: bold;
+}
+.contact-form input::-moz-placeholder {
+  font-weight: bold;
+}
+.contact-form input::-ms-placeholder {
+  font-weight: bold;
 }
 /********** END CONTACT US **********/
 
