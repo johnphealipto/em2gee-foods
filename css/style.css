@@ -349,7 +349,7 @@ header img {
   opacity: 0.2;
 }
 .contact-img-text {
-  color: white !important;
+  color: #FFFFE0 !important;
   font-weight: bold;
   text-align: center;
   position: absolute;
@@ -369,10 +369,10 @@ header img {
 }
 .contact-img-text div a {
  text-decoration: none;
- color: white;
+ color: #FFFFE0;
 }
 .contact-img-text div span {
-  color: silver;
+  color: gray;
 }
 /********** END CONTACT US **********/
 

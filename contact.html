@@ -61,6 +61,7 @@
   <!-- Main -->
   <div class="main" id="mainContent">
 
+    <!-- Intro To Contact -->
     <div class="hero-contact">
       <div class="contact-img"></div>
       <div class="contact-img-text">
@@ -73,7 +74,46 @@
       </div>
     </div>
 
-    
+    <!-- Contact Form -->
+      <div class="contactme">
+        <form name="contact" data-netlify="true" id="contactme" method="POST">
+          <div class="input-container">
+            <i class="fa fa-user fa-3x icon"></i>
+            <input
+              name="sender-name"
+              class="input-field"
+              type="text"
+              id="name"
+              placeholder="Company Name/Name"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <i class="fa fa-envelope fa-3x icon"></i>
+            <input
+              name="email"
+              class="input-field"
+              type="email"
+              id="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <textarea
+              class="input-field"
+              name="text"
+              id="emailContent"
+              placeholder="Write something here..."
+              required
+            ></textarea>
+          </div>
+          <div data-netlify-recaptcha="true"></div>
+          <button type="submit" id="submit" class="btn">Send</button>
+        </form>
+      </div>
+
+
 
     <!-- FOOTER -->
     <footer class="footer mb-5">
