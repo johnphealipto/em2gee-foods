@@ -378,15 +378,15 @@ header img {
 
 
 /********** CONTACT US **********/
-
 input[type="text"], input[type="email"], textarea {
   background-color: #FFFFE0;
-  width: 100%;
+  /*width: 100%;*/
+  border: 1px solid silver;
 }
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   background-color: #FFFFE0;
   box-shadow: none;
-  border: 2px solid red
+  border: 2px solid red;
 }
 .contact-form input::placeholder {
   color: black;
