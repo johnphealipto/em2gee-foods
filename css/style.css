@@ -224,15 +224,19 @@ header img {
   border-radius: 20%;
   box-shadow: 1px 1px 3px #000;
   -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+  animation-direction: reverse;
+}
+@keyframes slide {
+    0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 @-webkit-keyframes slide {
-    100% { left: 0; }
-}
-
-@keyframes slide {
     100% { left: 0; }
 }
 .brief-info .img:after {
