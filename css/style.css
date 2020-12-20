@@ -378,7 +378,7 @@ header img {
 
 
 /********** CONTACT US **********/
-/*** CONTACT FORM ***/
+/*** CONTACT FORM and Contact Address ***/
 .mainContact {
   margin: auto;
   margin-top: 13vh;
@@ -410,6 +410,11 @@ header img {
   background-color: red;
   color: #FFFFE0;
 }
+.contact-address {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+}
 .contact-address-container {
   cursor: pointer;
 }
@@ -420,38 +425,9 @@ header img {
   font-size: 1.5rem;
   color: rgb(105,105,105);
 }
-.contact-address-location {
+.contact-address-location, .contact-address-tele {
   font-weight: bold;
-  /*margin-bottom: 8vh;*/
 }
-/*.contact-address-location i.d-none {
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.contact-address-location i.d-none:hover {
-  animation: here 0.6s forwards;
-}
-@keyframes here {
-  0%, 100%{
-  }
-
-  50%{
-  }
-}*/
-/*.contact-address-location:hover {
-  animation: 3s;
-  -webkit-transition: all 0.3s ease-out;
-}
-.contact-address-tele {
-  font-weight: bold;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-}
-.contact-address-tele:hover {
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-}*/
 .contact-form button {
   padding-left: 20px;
   padding-right: 20px;
@@ -465,19 +441,18 @@ header img {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
+
+/*** Location on Google Map ***/
+.location-map iframe {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border-radius: 20px;
+}
 /********** END CONTACT US **********/
 
 
 
 /*** FOOTER ***/
-.footer-menu a {
-  color: #000;
-  display: block;
-  font-size: 1.1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-decoration: none;
-}
 .footer p span {
   font-size: 1.3rem;
 }

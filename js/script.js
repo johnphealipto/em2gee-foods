@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(() => {
 
 	$(".hamburger").click(function() {
    	$(this).toggleClass("is-active");
@@ -7,11 +7,11 @@ $(document).ready(function(){
    });
 
    $(".contact-address-location").hover(function() {
-      $(".fa-map-marker-alt").toggleClass("d-none");
+      // $(".fa-map-marker-alt").toggleClass('d-none');
    });
 
-   $(".contact-address-tele").hover(function() {
-      $(".fa-address-book").toggleClass("d-none");
+   $(".contact-address-tele").hover(() => {
+      // $(".fa-address-book").toggleClass("d-none");
    });
 });
 
