@@ -378,18 +378,24 @@ header img {
 
 
 /********** CONTACT US **********/
-input[type="text"], input[type="email"], textarea {
+/*** CONTACT FORM ***/
+.mainContact {
+  margin: auto;
+  margin-top: 13vh;
+  margin-bottom: 10vh;
+}
+.contact-form input[type="text"], input[type="email"], textarea {
   background-color: #FFFFE0;
   /*width: 100%;*/
-  border: 1px solid silver;
+  border: 1px solid black;
 }
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+.contact-form input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   background-color: #FFFFE0;
   box-shadow: none;
   border: 2px solid red;
 }
 .contact-form input::placeholder {
-  color: black;
+  color: gray;
 }
 .contact-form input::-webkit-placeholder {
   font-weight: bold;
@@ -399,6 +405,39 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 }
 .contact-form input::-ms-placeholder {
   font-weight: bold;
+}
+.contact-form button {
+  background-color: red;
+  color: #FFFFE0;
+}
+.contact-address-container {
+  cursor: pointer;
+}
+.contact-address-container i {
+  color: red;
+}
+.contact-address-container p {
+  font-size: 1.5rem;
+  color: rgb(105,105,105);
+}
+.contact-address-location {
+  font-weight: bold;
+  /*margin-bottom: 8vh;*/
+  animation: 3s;
+  -webkit-transition: all 0.3s ease-out;
+}
+.contact-address-location:hover {
+  animation: 3s;
+  -webkit-transition: all 0.3s ease-out;
+}
+.contact-address-tele {
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.contact-address-tele:hover {
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
 }
 /********** END CONTACT US **********/
 

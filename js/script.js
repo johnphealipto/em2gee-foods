@@ -1,17 +1,18 @@
 $(document).ready(function(){
+
 	$(".hamburger").click(function() {
    	$(this).toggleClass("is-active");
    	$(".panel").slideToggle("slow");
+      $("#mainContent").toggleClass("d-none");
+   });
 
-   	// $("#mainContent").addClass("d-none");
-   	// var x = $("#mainContent");
-   	// 	if $("#hamburger-11") === $(".is-active") {
-   	// 		x.style.display = "none";
-   	// 	}
-   	// 	else {
-   	// 		x.style.display = "block";
-   	// 	}
-  });
+   $(".contact-address-location").hover(function() {
+      $(".fa-map-marker-alt").toggleClass("d-none");
+   });
+
+   $(".contact-address-tele").hover(function() {
+      $(".fa-address-book").toggleClass("d-none");
+   });
 });
 
 // function myFunction() {
