@@ -453,6 +453,10 @@ header img {
 
 
 /*** FOOTER ***/
+footer {
+  background-color: rgb(38, 40, 44);
+  color: #FFFFE0;
+}
 .footer p span {
   font-size: 1.3rem;
 }
