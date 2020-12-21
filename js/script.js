@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function() {
 
 	$(".hamburger").click(function() {
    	$(this).toggleClass("is-active");
@@ -6,14 +6,28 @@ $(document).ready(() => {
       $("#mainContent").toggleClass("d-none");
    });
 
+
    $(".contact-address-location").hover(function() {
       // $(".fa-map-marker-alt").toggleClass('d-none');
    });
-
    $(".contact-address-tele").hover(() => {
       // $(".fa-address-book").toggleClass("d-none");
    });
+
+
+   $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if (scroll > 0){
+         $("header").addClass('scrolled');
+      } 
+      else{
+         $("header").removeClass('scrolled');
+      }
+   });
+   
+
 });
+
 
 // function myFunction() {
 //   var x = document.getElementById("mainContent");

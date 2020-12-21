@@ -37,11 +37,22 @@ html, body {
 
 /*** HEADER - MENU BUTTON ***/
 header {
+  position: relative;
+  background-color: #FFFFE0;
   margin-top: -10px;
   margin-bottom: -17px;
 }
 header img {
   width: 85%;
+  transition: 0.5s;
+}
+header.scrolled img {
+  width: 80%;
+}
+header.scrolled .logo{
+  position:relative;
+  /*top:10px;
+  left:0;*/
 }
 .menu-btn {
   position: absolute;
@@ -113,6 +124,7 @@ header img {
 .panel {
   padding: 40px;
   display: none;
+  overflow: hidden;
 }
 .panel .panel-list a {
   color: #000;
@@ -413,7 +425,7 @@ header img {
 .contact-address {
   padding-top: 5vh;
   padding-bottom: 5vh;
-  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.5);
 }
 .contact-address-container {
   cursor: pointer;
@@ -455,25 +467,32 @@ header img {
 /*** FOOTER ***/
 footer {
   background-color: rgb(38, 40, 44);
-  color: #FFFFE0;
+  color: rgba(255, 255, 224, 0.8);
+  font-size: 1.2rem;
+  overflow: hidden;
 }
-.footer p span {
-  font-size: 1.3rem;
+footer .footer-1 {
+  background-color: rgba(255, 255, 224, 0.1);
 }
-footer .connect {
-  margin-top: -17px; 
+footer .footer-1 .container {
+  margin: auto;
+}
+footer .footer-2 {
+  margin: auto;
+}
+footer .footer-2 .phealipto a {
+  color: rgba(255, 255, 224, 0.8); 
 }
 footer .connect .connect-icon {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .connect .connect-icon i {
-  color: #111;
-  width: 15px;
+  color: red;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
 }
 .connect .connect-icon i:hover {
-  color: red;
+  color: #FFFFE0;
 }
 /*** END FOOTER ***/
 
