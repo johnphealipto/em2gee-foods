@@ -398,8 +398,7 @@ header.scrolled .logo{
 }
 .contact-form input[type="text"], input[type="email"], textarea {
   background-color: #FFFFE0;
-  /*width: 100%;*/
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 .contact-form input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
   background-color: #FFFFE0;
