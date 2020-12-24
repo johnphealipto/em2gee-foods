@@ -204,22 +204,6 @@ header.scrolled .logo{
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-/*** BACKGROUND DECOR ***/
-.decor {
-  position: absolute;
-  /*top: 0;
-  left: 0;*/
-  width: 70px;
-  height: 180px;
-  border-radius: 0 50% 50% 0;
-  box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 199, 44, 0.1);
-  /*transform: translateX(100%);*/
-  /*animation-name: decor;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;*/
-}
-
 /*** BRIEF INFO ***/
 .brief-info {
   margin-top: 7vh;
@@ -406,7 +390,7 @@ header.scrolled .logo{
   border: 2px solid red;
 }
 .contact-form input::placeholder {
-  color: gray;
+  color: rgb(0,0,0);
 }
 .contact-form input::-webkit-placeholder {
   color: gray;
@@ -466,24 +450,65 @@ header.scrolled .logo{
 /*** FOOTER ***/
 footer {
   background-color: rgb(38, 40, 44);
-  color: rgba(255, 255, 224, 0.8);
+  color: rgb(255, 255, 224);
   font-size: 1.2rem;
   overflow: hidden;
 }
 footer .footer-1 {
-  background-color: rgba(255, 255, 224, 0.1);
+  background-color: rgba(255, 255, 224, 0.06);
+  /*margin-top: 0.5vh;*/
 }
 footer .footer-1 .container {
   margin: auto;
+  padding-top: 7vh;
+  padding-bottom: 6vh;
+}
+footer .footer-contact-heading {
+  display: block;
+  line-height: normal;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+footer .widget-contact-info ul {
+  padding: 0;
+  margin: 0;
+}
+footer .widget-contact-info ul li {
+  display: block;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  line-height: normal;
+  list-style: none;
+}
+footer .widget-contact-info ul li>span {
+  display: table-cell;
+}
+footer .widget-contact-info .contact-info-icon {
+  padding-top: 4px;
+  padding-right: 10px;
+  /*vertical-align: top;*/
+}
+footer .widget-contact-info .contact-info-heading {
+  display: block;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: bold;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+footer .widget-contact-info .contact-info-details {
+  line-height: 24px;
 }
 footer .footer-2 {
   margin: auto;
+  margin-top: 3.5vh;
+  margin-bottom: 2vh;
 }
 footer .footer-2 .phealipto a {
-  color: rgba(255, 255, 224, 0.8); 
+  color: rgb(255, 255, 224); 
 }
 footer .connect .connect-icon {
-  margin-right: 5px;
+  padding-right: 5px;
 }
 .connect .connect-icon i {
   color: red;
