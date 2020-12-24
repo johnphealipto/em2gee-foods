@@ -455,7 +455,7 @@ footer {
   overflow: hidden;
 }
 footer .footer-1 {
-  background-color: rgba(255, 255, 224, 0.06);
+  background-color: rgba(255, 255, 224, 0.05);
   /*margin-top: 0.5vh;*/
 }
 footer .footer-1 .container {
@@ -468,6 +468,7 @@ footer .footer-contact-heading {
   line-height: normal;
   font-weight: bold;
   letter-spacing: 1px;
+  padding-bottom: 2vh;
 }
 footer .widget-contact-info ul {
   padding: 0;
@@ -484,6 +485,7 @@ footer .widget-contact-info ul li>span {
   display: table-cell;
 }
 footer .widget-contact-info .contact-info-icon {
+  color: red;
   padding-top: 4px;
   padding-right: 10px;
   /*vertical-align: top;*/
@@ -504,10 +506,9 @@ footer .footer-2 {
   margin-top: 3.5vh;
   margin-bottom: 2vh;
 }
-footer .footer-2 {
-  margin: auto;
-  margin-top: 3.5vh;
-  margin-bottom: 2vh;
+footer .footer-2 p span {
+  font-size: 2rem; 
+  vertical-align: middle;
 }
 footer .footer-2 .phealipto a {
   color: rgb(255, 255, 224); 
