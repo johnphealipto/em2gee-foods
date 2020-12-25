@@ -218,8 +218,8 @@ header.scrolled .logo{
 .brief-info .img {
 }
 .brief-info .img img {
-  border-radius: 20%;
-  box-shadow: 1px 1px 3px #000;
+  border-radius: 5px;
+  /*box-shadow: 1px 1px 3px #000;*/
   -webkit-animation: slide 0.5s forwards;
   -webkit-animation-delay: 2s;
   animation: slide 0.5s forwards;
@@ -236,7 +236,7 @@ header.scrolled .logo{
 @-webkit-keyframes slide {
     100% { left: 0; }
 }
-.brief-info .img:after {
+/*.brief-info .img:after {
   content:'';
   background: #FFFFE0;
   position: absolute;
@@ -249,7 +249,7 @@ header.scrolled .logo{
   top: auto;
   bottom: -10px;
   border-radius: 10% 100% 10% 100%;
-}
+}*/
 
 /*** TESTIMONIALS ***/
 .slider-area {
