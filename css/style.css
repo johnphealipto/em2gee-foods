@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 
 html, body {
@@ -463,34 +464,40 @@ footer .footer-1 .container {
   padding-top: 7vh;
   padding-bottom: 6vh;
 }
-footer .footer-contact-heading {
+footer .footer-1 .brief-widget-img {
+  padding-bottom: 2.2vh;
+}
+footer .footer-1 .brief-widget-img img {
+  width: 40%;
+}
+footer .footer-1 .footer-contact-heading {
   display: block;
   line-height: normal;
   font-weight: bold;
   letter-spacing: 1px;
   padding-bottom: 2vh;
 }
-footer .widget-contact-info ul {
+footer .footer-1 .widget-contact-info ul {
   padding: 0;
   margin: 0;
 }
-footer .widget-contact-info ul li {
+footer .footer-1 .widget-contact-info ul li {
   display: block;
   padding-bottom: 0;
   margin-bottom: 10px;
   line-height: normal;
   list-style: none;
 }
-footer .widget-contact-info ul li>span {
+footer .footer-1 .widget-contact-info ul li>span {
   display: table-cell;
 }
-footer .widget-contact-info .contact-info-icon {
+footer .footer-1 .widget-contact-info .contact-info-icon {
   color: red;
   padding-top: 4px;
   padding-right: 10px;
   /*vertical-align: top;*/
 }
-footer .widget-contact-info .contact-info-heading {
+footer .footer-1 .widget-contact-info .contact-info-heading {
   display: block;
   font-size: 18px;
   line-height: normal;
@@ -498,8 +505,18 @@ footer .widget-contact-info .contact-info-heading {
   margin-bottom: 5px;
   letter-spacing: 1px;
 }
-footer .widget-contact-info .contact-info-details {
+footer .footer-1 .widget-contact-info .contact-info-details {
   line-height: 24px;
+}
+footer .footer-1 .widget-box {
+  background-color: red;
+  border-radius: 5px;
+}
+footer .footer-1 .widget-box .widget-box-details a {
+  background-color: rgb(255, 255, 224);
+  color: red;
+  font-weight: bold;
+  border-radius: 25%;
 }
 footer .footer-2 {
   margin: auto;
@@ -507,7 +524,7 @@ footer .footer-2 {
   margin-bottom: 2vh;
 }
 footer .footer-2 p span {
-  font-size: 2rem; 
+  font-family: 'Acme', sans-serif;
   vertical-align: middle;
 }
 footer .footer-2 .phealipto a {
@@ -536,9 +553,12 @@ footer .connect .connect-icon {
   .semi-circle {
     display: none;
   }
-
   .hero-carousel .carousel-item {
     max-height: 180px;
+  }
+  footer .footer-1 .col-sm .brief-widget, 
+  footer .footer-1 .col-sm .footer-contact {
+    margin-bottom: 50px;
   }
 }
 
