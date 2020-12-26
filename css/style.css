@@ -44,11 +44,11 @@ header {
   margin-bottom: -17px;
 }
 header img {
-  width: 85%;
+  width: 78%;
   transition: 0.5s;
 }
 header.scrolled img {
-  width: 80%;
+  /*width: 80%;*/
 }
 header.scrolled .logo{
   position:relative;
@@ -169,17 +169,29 @@ header.scrolled .logo{
 .hero-carousel .carousel-caption {
   text-align: center;
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   animation-name: caption;
-  animation-duration: 4s;
-  animation-delay: -2s;
+  animation-duration: 5s;
+  animation-delay: -3s;
 }
 @keyframes caption {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  25% {
+    opacity: 0;
+    top: 0%;
+  }
   50% {
     opacity: 0.5;
-    top: 43%;
+    top: 30%;
+  }
+  100% {
+    opacity: 1;
+    top: 47%;
   }
 }
 .hero-carousel .carousel-caption p {
@@ -207,50 +219,45 @@ header.scrolled .logo{
 
 /*** BRIEF INFO ***/
 .brief-info {
-  margin-top: 7vh;
+  margin-top: 10vh;
 }
-.brief-info .container-fluid { 
-  /*display:flex;*/
-  /*text-align:center;*/
+.brief-info .brief-info-details h2 {
+  font-weight: bold;
+  padding-bottom: 3vh;
 }
-.brief-info .info { 
-  /*order: 1;*/
+.brief-info .brief-info-details p {
+  font-size: 1.3rem;
 }
-.brief-info .img {
+.brief-info .brief-info-img {
+  position: relative;
 }
-.brief-info .img img {
+.brief-info .brief-info-img img {
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
   border-radius: 5px;
   /*box-shadow: 1px 1px 3px #000;*/
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 2s;
-  animation-direction: reverse;
 }
-@keyframes slide {
-    0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
-}
-@-webkit-keyframes slide {
-    100% { left: 0; }
-}
-/*.brief-info .img:after {
+.brief-info .brief-info-img:after {
   content:'';
-  background: #FFFFE0;
   position: absolute;
-  top: -10px;
-  left: 0;
-  width: 26%;
-  height: 18vh;
+  background-color: red;
+  width: 7px;
+  height: 50%;
+  bottom: 0;
+  right: -10px;
+  border-radius: 5px;
 }
-.brief-info .img:after {
-  top: auto;
-  bottom: -10px;
-  border-radius: 10% 100% 10% 100%;
-}*/
+.brief-info .brief-info-img:before {
+  content:'';
+  position: absolute;
+  background-color: red;
+  width: 25%;
+  height: 7px;
+  bottom: 0;
+  right: -10px;
+  border-radius: 5px;
+}
 
 /*** TESTIMONIALS ***/
 .slider-area {
@@ -273,8 +280,8 @@ header.scrolled .logo{
   background-image: radial-gradient(rgb(255,0,0) 0.1rem, transparent 1px);
   background-size: 20px 20px;
 }
-.slider-area .slider-header h3 {
-  font-size: 1.5rem;
+.slider-area .slider-header h2 {
+  font-weight: bold;
   letter-spacing: 1px;
 }
 .slider-area .slider-header {
@@ -342,7 +349,7 @@ header.scrolled .logo{
   height: 160px;
   margin: auto;
   overflow: hidden;
-  opacity: 0.2;
+  opacity: 0.29;
 }
 .page-hero-img-text {
   color: #FFFFE0 !important;
@@ -376,10 +383,12 @@ header.scrolled .logo{
 
 /********** CONTACT US **********/
 /*** CONTACT FORM and Contact Address ***/
-.mainContact {
+.main-contact {
   margin: auto;
   margin-top: 13vh;
-  margin-bottom: 10vh;
+}
+.main-contact .contact-form {
+  padding-right: 35px;
 }
 .contact-form input[type="text"], input[type="email"], textarea {
   background-color: #FFFFE0;
@@ -394,13 +403,13 @@ header.scrolled .logo{
   color: rgb(0,0,0);
 }
 .contact-form input::-webkit-placeholder {
-  color: gray;
+  color: rgb(0,0,0);
 }
 .contact-form input::-moz-placeholder {
-  color: gray;
+  color: rgb(0,0,0);
 }
 .contact-form input::-ms-placeholder {
-  color: gray;
+  color: rgb(0,0,0);
 }
 .contact-form button {
   background-color: red;
@@ -419,7 +428,7 @@ header.scrolled .logo{
 }
 .contact-address-container p {
   font-size: 1.5rem;
-  color: rgb(105,105,105);
+  color: black;
 }
 .contact-address-location, .contact-address-tele {
   font-weight: bold;
@@ -439,12 +448,60 @@ header.scrolled .logo{
 }
 
 /*** Location on Google Map ***/
-.location-map iframe {
-  margin-top: 10vh;
+.location-map .map-tile {
+  text-align: center;
+}
+.location-map .map-tile iframe {
+  width: 75%;
+  height: 55vh;
+  margin-top: 8vh;
   margin-bottom: 10vh;
   border-radius: 20px;
 }
 /********** END CONTACT US **********/
+
+
+
+/********** OUR TEAM **********/
+.main-team-members {
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+.main-team-members .team-members-container .col-12 {
+  background-color: rgba(255,255,255,0.4);
+  box-shadow: 0px 5px 17px -7px rgba(1, 1, 1, 0.5);
+  margin: auto;
+  padding: 5vh;
+  margin-right: 0.5vh;
+  margin-left: 0.5vh;
+  margin-bottom: 5vh;
+}
+.main-team-members .team-member-content {
+  cursor: pointer;
+}
+.main-team-members .team-members-container .team-member-img {
+  width: 250px;
+  height: 300px;
+  margin: auto;
+  border-radius: 10%;
+  overflow: hidden;
+}
+.main-team-members .team-members-container .team-member-img img {
+  width: 100%;
+}
+.main-team-members .team-member-details h2 {
+  font-weight: bold;
+  padding-top: 3rem;
+}
+.main-team-members .team-member-details h5 {
+  letter-spacing: 2px;
+}
+.main-team-members .team-member-content hr {
+  width: 45%;
+  border: 2px outset red;
+}
+/********** END OUR TEAM **********/
 
 
 
@@ -517,6 +574,14 @@ footer .footer-1 .widget-box .widget-box-details a {
   color: red;
   font-weight: bold;
   border-radius: 25%;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+footer .footer-1 .widget-box .widget-box-details a:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 footer .footer-2 {
   margin: auto;
@@ -553,18 +618,30 @@ footer .connect .connect-icon {
   .semi-circle {
     display: none;
   }
+  header img {
+    width: 70%;
+  }
   .hero-carousel .carousel-item {
-    max-height: 180px;
+    max-height: 150px;
   }
   footer .footer-1 .col-sm .brief-widget, 
   footer .footer-1 .col-sm .footer-contact {
+    margin-bottom: 50px;
+  }
+  /*Contact HTML*/
+  .main-contact .contact-form {
     margin-bottom: 50px;
   }
 }
 
 
 /*Small devices {sm} (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  footer .footer-1 .col-sm .brief-widget, 
+  footer .footer-1 .col-sm .footer-contact {
+    margin-bottom: 50px;
+  }
+}
 
 
 /*Medium devices {md} (tablets iPad, 768px and up)*/

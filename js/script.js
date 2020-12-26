@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 
    $(".contact-address-location").hover(function() {
-      // $(".fa-map-marker-alt").toggleClass('d-none');
+      // $(".fa-map-marker-alt").toggleClass('fa-4x');
    });
    $(".contact-address-tele").hover(() => {
       // $(".fa-address-book").toggleClass("d-none");
