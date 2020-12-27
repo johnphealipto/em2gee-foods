@@ -261,7 +261,8 @@ header.scrolled .logo{
 
 /*** TESTIMONIALS ***/
 .slider-area {
-  background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.1) 50%);
+  background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.2) 50%);
+  /*box-shadow: 0px 5px 17px -7px rgba(1, 1, 1, 0.5);*/
   padding-top: 50px 0;
   position: relative;
   margin: 100px 0;
@@ -373,9 +374,16 @@ header.scrolled .logo{
 .page-hero-img-text div a {
  text-decoration: none;
  color: #FFFFE0;
+ transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.page-hero-img-text div a:hover {
+ color: red;
+ transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .page-hero-img-text div span {
-  color: gray;
+  color: rgba(255, 255, 224, 0.62);
 }
 /*** END OF PAGE INTRO [BRIDGE] ***/
 
@@ -465,20 +473,18 @@ header.scrolled .logo{
 /********** OUR TEAM **********/
 .main-team-members {
   text-align: center;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
 }
-.main-team-members .team-members-container .col-12 {
-  background-color: rgba(255,255,255,0.4);
-  box-shadow: 0px 5px 17px -7px rgba(1, 1, 1, 0.5);
-  margin: auto;
-  padding: 5vh;
-  margin-right: 0.5vh;
-  margin-left: 0.5vh;
+.main-team-members .team-members-container .card {
+  background-color: rgba(255,255,255,0.45);
+  box-shadow: 0px 5px 17px -7px rgba(1, 1, 1, 0.55);
+  /*border: none;*/
   margin-bottom: 5vh;
 }
 .main-team-members .team-member-content {
   cursor: pointer;
+  padding: 4vh;
 }
 .main-team-members .team-members-container .team-member-img {
   width: 250px;
@@ -486,20 +492,44 @@ header.scrolled .logo{
   margin: auto;
   border-radius: 10%;
   overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.main-team-members .team-members-container .team-member-img.img-border {
+  border: 5px solid red; 
+  transition: all 0.1s ease-out;
+  -webkit-transition: all 0.1s ease-out;
 }
 .main-team-members .team-members-container .team-member-img img {
   width: 100%;
 }
 .main-team-members .team-member-details h2 {
   font-weight: bold;
-  padding-top: 3rem;
+  padding-top: 2.3rem;
 }
 .main-team-members .team-member-details h5 {
   letter-spacing: 2px;
 }
 .main-team-members .team-member-content hr {
-  width: 45%;
-  border: 2px outset red;
+  width: 40%;
+  border: 2px solid red;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+}
+.main-team-members .team-member-content hr.hr-border {
+  width: 25%;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+.main-team-members .team-member-details p {
+  font-size: 1.3rem;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+}
+.main-team-members .team-member-details p.text-red {
+  color: red;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
 }
 /********** END OUR TEAM **********/
 
