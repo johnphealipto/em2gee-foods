@@ -8,6 +8,12 @@ $(document).ready(function() {
    });
 
 
+   // BRIEF INFO BUTTON ICON
+   $(".brief-info-btn button").hover(function() {
+      $(".brief-info-btn button i").toggleClass('show-arrow');
+   });
+
+
    // CONTACT US
    $(".contact-address-location").hover(function() {
       // $(".fa-map-marker-alt").toggleClass('fa-4x');

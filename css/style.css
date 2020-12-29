@@ -217,23 +217,57 @@ header.scrolled .logo{
   -webkit-transition: all 0.3s ease-in-out;
 }
 
+/*** WELCOME TO EM2GEE FOODS ***/
+.welcome-em2gee {
+  margin-top: 12vh;
+  margin-bottom: 3vh;
+}
+.welcome-em2gee .welcome-em2gee-content {
+  text-align: center;
+}
+.welcome-em2gee .welcome-em2gee-content h1 {
+  font-weight: bold;
+}
+.welcome-em2gee .welcome-em2gee-content hr {
+  width: 10%;
+  margin-top: -1px;
+  border-top: 5px solid red;
+}
+
 /*** BRIEF INFO ***/
 .brief-info {
   margin-top: 10vh;
 }
-.brief-info .brief-info-details h2 {
+.brief-info .brief-info-details {
+  margin-bottom: 6.1vh;
+}
+.brief-info .brief-info-details h3 {
   font-weight: bold;
   padding-bottom: 3vh;
 }
 .brief-info .brief-info-details p {
   font-size: 1.3rem;
 }
+.brief-info .brief-info-btn {
+  padding-top: 3vh;
+}
+.brief-info .brief-info-btn button {
+  background-color: red;
+  color: #FFFFE0;
+}
+.brief-info .brief-info-btn i {
+  display: none;
+}
+.brief-info .brief-info-btn i.show-arrow {
+  display: inline-block;
+  position: relative;
+}
 .brief-info .brief-info-img {
   position: relative;
 }
 .brief-info .brief-info-img img {
   width: 100%;
-  position: relative;
+  /*position: relative;*/
   margin-bottom: 10px;
   border-radius: 5px;
   /*box-shadow: 1px 1px 3px #000;*/
@@ -261,7 +295,7 @@ header.scrolled .logo{
 
 /*** TESTIMONIALS ***/
 .slider-area {
-  background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.2) 50%);
+  background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.15) 75%);
   /*box-shadow: 0px 5px 17px -7px rgba(1, 1, 1, 0.5);*/
   padding-top: 50px 0;
   position: relative;
@@ -456,14 +490,16 @@ header.scrolled .logo{
 }
 
 /*** Location on Google Map ***/
+.location-map {
+  margin-top: 15vh;
+  margin-bottom: 12vh;
+}
 .location-map .map-tile {
   text-align: center;
 }
 .location-map .map-tile iframe {
   width: 75%;
   height: 55vh;
-  margin-top: 8vh;
-  margin-bottom: 10vh;
   border-radius: 20px;
 }
 /********** END CONTACT US **********/
@@ -654,6 +690,9 @@ footer .connect .connect-icon {
   .hero-carousel .carousel-item {
     max-height: 150px;
   }
+  .welcome-em2gee {
+    margin-top: 7vh;
+  }
   footer .footer-1 .col-sm .brief-widget, 
   footer .footer-1 .col-sm .footer-contact {
     margin-bottom: 50px;
@@ -661,6 +700,11 @@ footer .connect .connect-icon {
   /*Contact HTML*/
   .main-contact .contact-form {
     margin-bottom: 50px;
+  }
+  .location-map .map-tile iframe {
+    width: 91%;
+    height: 55vh;
+    border-radius: 15px;
   }
 }
 
