@@ -259,9 +259,26 @@ header.scrolled .logo{
 .welcome-em2gee-box-3 {
   background-color: rgba(38, 40, 44, 0.95);
   color: #FFFFE0;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.welcome-em2gee-box-2.bg-red,
+.welcome-em2gee-box-3.bg-red {
+  background-color: rgba(255, 0, 0, 0.95);
+  color: #FFFFE0;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .welcome-em2gee-box-icon i {
   color: red;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.welcome-em2gee-box-2 .welcome-em2gee-box-icon i.color-icon,
+.welcome-em2gee-box-3 .welcome-em2gee-box-icon i.color-icon {
+  color: #FFFFE0;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
 }
 .welcome-em2gee-box-details {
   position: relative;
@@ -276,18 +293,23 @@ header.scrolled .logo{
   display: block;
   width: 10%;
   border-bottom: 2px solid red;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.welcome-em2gee-box-2 .welcome-em2gee-box-details h3.color-border:after,
+.welcome-em2gee-box-3 .welcome-em2gee-box-details h3.color-border:after {
+  content: ""; 
+  display: block;
+  width: 10%;
+  border-bottom: 2px solid #FFFFE0;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .welcome-em2gee-box-details p {
   font-size: 1.2rem;
   padding-top: 1.4vh;
 }
-.welcome-em2gee-box-2.bg-red {
-  background-color: rgba(255, 0, 0, 0.95);
-  color: #FFFFE0;
-}
-.welcome-em2gee-box-2 .welcome-em2gee-box-icon i.color-icon {
-  color: #FFFFE0;
-}
+
 
 /*** BRIEF INFO ***/
 .brief-info {

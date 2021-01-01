@@ -11,7 +11,13 @@ $(document).ready(function() {
    // WELCOME EM2GEE BOX
    $(".welcome-em2gee-box-2").hover(function() {
       $(this).toggleClass("bg-red");
-      $(".welcome-em2gee-box-icon i").toggleClass("color-icon");
+      $(".welcome-em2gee-box-2 .welcome-em2gee-box-icon i").toggleClass("color-icon");
+      $(".welcome-em2gee-box-2 .welcome-em2gee-box-details h3").toggleClass("color-border");
+   });
+   $(".welcome-em2gee-box-3").hover(function() {
+      $(this).toggleClass("bg-red");
+      $(".welcome-em2gee-box-3 .welcome-em2gee-box-icon i").toggleClass("color-icon");
+      $(".welcome-em2gee-box-3 .welcome-em2gee-box-details h3").toggleClass("color-border");
    });
 
 
