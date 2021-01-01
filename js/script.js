@@ -8,6 +8,13 @@ $(document).ready(function() {
    });
 
 
+   // WELCOME EM2GEE BOX
+   $(".welcome-em2gee-box-2").hover(function() {
+      $(this).toggleClass("bg-red");
+      $(".welcome-em2gee-box-icon i").toggleClass("color-icon");
+   });
+
+
    // BRIEF INFO BUTTON ICON
    $(".brief-info-btn button").hover(function() {
       $(".brief-info-btn button i").toggleClass('show-arrow');

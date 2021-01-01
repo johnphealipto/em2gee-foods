@@ -220,23 +220,78 @@ header.scrolled .logo{
 /*** WELCOME TO EM2GEE FOODS ***/
 .welcome-em2gee {
   margin-top: 12vh;
-  margin-bottom: 3vh;
 }
-.welcome-em2gee .welcome-em2gee-content {
+.welcome-em2gee .welcome-em2gee-content-1 {
   text-align: center;
 }
-.welcome-em2gee .welcome-em2gee-content h1 {
+.welcome-em2gee .welcome-em2gee-content-1 h1 {
   font-weight: bold;
 }
-.welcome-em2gee .welcome-em2gee-content hr {
+.welcome-em2gee .welcome-em2gee-content-1 hr {
   width: 10%;
   margin-top: -1px;
   border-top: 5px solid red;
 }
+.welcome-em2gee-content-2 {
+  margin-top: 9vh;
+}
+.welcome-em2gee-box-1,
+.welcome-em2gee-box-2,
+.welcome-em2gee-box-3 {
+  position: relative;
+  border-radius: 5px;
+  padding: 5vh;
+}
+.welcome-em2gee-box-1 {
+  background-color: rgba(255, 0, 0, 0.95);
+  color: #FFFFE0;
+}
+.welcome-em2gee-box-1 .welcome-em2gee-box-icon i {
+  color: #FFFFE0;
+}
+.welcome-em2gee-box-1 .welcome-em2gee-box-details h3:after {
+  content: ""; 
+  display: block;
+  width: 10%;
+  border-bottom: 2px solid #FFFFE0;
+}
+.welcome-em2gee-box-2,
+.welcome-em2gee-box-3 {
+  background-color: rgba(38, 40, 44, 0.95);
+  color: #FFFFE0;
+}
+.welcome-em2gee-box-icon i {
+  color: red;
+}
+.welcome-em2gee-box-details {
+  position: relative;
+  padding-top: 9vh;
+}
+.welcome-em2gee-box-details h3 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.welcome-em2gee-box-details h3:after {
+  content: ""; 
+  display: block;
+  width: 10%;
+  border-bottom: 2px solid red;
+}
+.welcome-em2gee-box-details p {
+  font-size: 1.2rem;
+  padding-top: 1.4vh;
+}
+.welcome-em2gee-box-2.bg-red {
+  background-color: rgba(255, 0, 0, 0.95);
+  color: #FFFFE0;
+}
+.welcome-em2gee-box-2 .welcome-em2gee-box-icon i.color-icon {
+  color: #FFFFE0;
+}
 
 /*** BRIEF INFO ***/
 .brief-info {
-  margin-top: 10vh;
+  margin-top: 16vh;
 }
 .brief-info .brief-info-details {
   margin-bottom: 6.1vh;
@@ -694,10 +749,15 @@ footer .connect .connect-icon {
   .welcome-em2gee {
     margin-top: 7vh;
   }
+  .welcome-em2gee-box-2,
+  .welcome-em2gee-box-3 {
+    margin-top: 5vh;
+  }
   footer .footer-1 .col-sm .brief-widget, 
   footer .footer-1 .col-sm .footer-contact {
     margin-bottom: 50px;
   }
+
   /*Contact HTML*/
   .main-contact .contact-form {
     margin-bottom: 50px;
@@ -707,6 +767,7 @@ footer .connect .connect-icon {
     height: 55vh;
     border-radius: 15px;
   }
+
 }
 
 
