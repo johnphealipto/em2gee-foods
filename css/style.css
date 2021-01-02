@@ -381,6 +381,25 @@ header.scrolled .logo{
   border-radius: 5px;
 }
 
+/*** EM2GEE RECORDS ***/
+.em2gee-records {
+  background-color: red;
+  color: #FFFFE0;
+  margin-top: 18vh;
+  padding: 7vh;
+}
+.em2gee-records .em2gee-records-details {
+  position: relative;
+  text-align: center;
+}
+.em2gee-records .em2gee-records-details span {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.em2gee-records .em2gee-records-details h3 {
+  font-size: 1.5rem;
+}
+
 /*** TESTIMONIALS ***/
 .slider-area {
   background: linear-gradient(-100deg, #FFFFE0 50%, rgba(255, 199, 44, 0.15) 75%);
@@ -637,17 +656,20 @@ header.scrolled .logo{
 }
 .main-team-members .team-member-content hr {
   width: 40%;
+  margin: 0 auto;
   border: 2px solid red;
   transition: all 0.4s ease-out;
   -webkit-transition: all 0.4s ease-out;
 }
 .main-team-members .team-member-content hr.hr-border {
   width: 25%;
+  margin: 0 auto;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
 }
 .main-team-members .team-member-details p {
   font-size: 1.3rem;
+  padding-top: 3vh;
   transition: all 0.4s ease-out;
   -webkit-transition: all 0.4s ease-out;
 }
