@@ -37,17 +37,17 @@ $(document).ready(function() {
 
 
    // OUR TEAM
-   $(".main-team-members .card.ceo").hover(function() {
+   $(".main-team-members .ceo").hover(function() {
       $(".ceo .team-member-img").toggleClass('img-border');
       $(".ceo hr").toggleClass('hr-border');
       $(".ceo p").toggleClass('text-red');
    });
-   $(".main-team-members .card.cfo").hover(function() {
+   $(".main-team-members .cfo").hover(function() {
       $(".cfo .team-member-img").toggleClass('img-border');
       $(".cfo hr").toggleClass('hr-border');
       $(".cfo p").toggleClass('text-red');
    });
-   $(".main-team-members .card.coo").hover(function() {
+   $(".main-team-members .coo").hover(function() {
       $(".coo .team-member-img").toggleClass('img-border');
       $(".coo hr").toggleClass('hr-border');
       $(".coo p").toggleClass('text-red');
@@ -65,13 +65,3 @@ $(document).ready(function() {
    // });
    
 });
-
-
-// function myFunction() {
-//   var x = document.getElementById("mainContent");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
-// }
