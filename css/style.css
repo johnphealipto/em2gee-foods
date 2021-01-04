@@ -208,7 +208,6 @@ header.scrolled .logo{
 .hero-carousel .carousel-caption button {
   background-color: red;
   color: #FFFFE0;
-  letter-spacing: 1px;
   font-size: 1.5rem;
   border: none;
   /*box-shadow: 2px 2px 9px #000;*/
@@ -216,8 +215,7 @@ header.scrolled .logo{
   -webkit-transition: all 0.4s ease-out;
 }
 .hero-carousel .carousel-caption button:hover {
-  padding-left: 20px;
-  padding-right: 20px;
+  transform: scale(1.05);
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
@@ -297,7 +295,6 @@ header.scrolled .logo{
 }
 .welcome-em2gee-box-details h3 {
   font-weight: bold;
-  letter-spacing: 1px;
 }
 .welcome-em2gee-box-details h3:after {
   content: ""; 
@@ -424,7 +421,6 @@ header.scrolled .logo{
 }
 .slider-area .slider-header h2 {
   font-weight: bold;
-  letter-spacing: 1px;
 }
 .slider-area .slider-header {
   padding-bottom: 1.5rem;
@@ -433,7 +429,6 @@ header.scrolled .logo{
   color: red;
   font-weight: bold;
   font-size: 2rem;
-  letter-spacing: 1px;
   margin-top: -9px;
 }
 .img-area {
@@ -453,7 +448,6 @@ header.scrolled .logo{
 }
 .testimonials .carousel-caption p {
   font-size: 1.2rem;
-  letter-spacing: 1px;
   width: 70%;
   margin: auto;
 }
@@ -483,7 +477,7 @@ header.scrolled .logo{
   margin: 30px 0;
 }
 .page-hero-img {
-  background-image: url("../img/bean.png");
+  background-image: url("../img/farmland.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -505,23 +499,14 @@ header.scrolled .logo{
 .page-hero-img-text h3 {
   font-size: 2.5rem;
   font-weight: bold;
-  letter-spacing: 3px;
 }
 .page-hero-img-text div {
   font-size: 1.3rem;
   margin-top: -10px;
-  letter-spacing: 1px;
 }
 .page-hero-img-text div a {
  text-decoration: none;
  color: #FFFFE0;
- transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-}
-.page-hero-img-text div a:hover {
- color: red;
- transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
 }
 .page-hero-img-text div span {
   color: rgba(255, 255, 224, 0.62);
@@ -577,6 +562,20 @@ header.scrolled .logo{
   border-radius: 5px;
 }
 
+/*The three core aim*/
+.about-three-core {
+  background-color: red;
+  color: #FFFFE0;
+  margin-top: 18vh;
+  padding: 7vh;
+}
+.about-three-core .about-three-core-details {
+  text-align: center;
+}
+.about-three-core .about-three-core-details h2 {
+  font-weight: bold;
+}
+
 /* Team Members */
 .main-team-members {
   margin-top: 15vh;
@@ -625,7 +624,7 @@ header.scrolled .logo{
   padding-top: 2.3rem;
 }
 .main-team-members .team-member-details h5 {
-  letter-spacing: 2px;
+  /*letter-spacing: 2px;*/
 }
 .main-team-members .team-member-content hr {
   width: 40%;
@@ -765,7 +764,6 @@ footer .footer-1 .footer-contact-heading {
   display: block;
   line-height: normal;
   font-weight: bold;
-  letter-spacing: 1px;
   padding-bottom: 2vh;
 }
 footer .footer-1 .widget-contact-info ul {
@@ -794,7 +792,6 @@ footer .footer-1 .widget-contact-info .contact-info-heading {
   line-height: normal;
   font-weight: bold;
   margin-bottom: 5px;
-  letter-spacing: 1px;
 }
 footer .footer-1 .widget-contact-info .contact-info-details {
   line-height: 24px;
@@ -868,6 +865,15 @@ footer .connect .connect-icon {
   footer .footer-1 .col-sm .brief-widget, 
   footer .footer-1 .col-sm .footer-contact {
     margin-bottom: 50px;
+  }
+
+  /*About Us*/
+  .about-us {
+    margin-top: 7vh;
+  }
+  .about-three-core .about-three-core-details {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
   }
 
   /*Contact HTML*/
