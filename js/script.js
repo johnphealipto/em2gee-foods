@@ -1,3 +1,8 @@
+// AOS.init();
+AOS.init({
+   duration: 800,
+});
+
 $(document).ready(function() {
 
    // MENU BUTTON FUNCTION
