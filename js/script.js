@@ -1,7 +1,4 @@
-// AOS.init();
-AOS.init({
-   duration: 800,
-});
+AOS.init();
 
 $(document).ready(function() {
 
