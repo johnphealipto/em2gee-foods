@@ -268,26 +268,26 @@ header.scrolled .logo{
 .welcome-em2gee-box-3 {
   background-color: rgba(38, 40, 44, 0.95);
   color: #FFFFE0;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
+  /*transition: all 0.2s ease-in-out;*/
+  /*-webkit-transition: all 0.2s ease-in-out;*/
 }
 .welcome-em2gee-box-2.bg-red,
 .welcome-em2gee-box-3.bg-red {
   background-color: rgba(255, 0, 0, 0.95);
   color: #FFFFE0;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
+  /*transition: all 0.2s ease-in-out;*/
+  /*-webkit-transition: all 0.2s ease-in-out;*/
 }
 .welcome-em2gee-box-icon i {
   color: red;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .welcome-em2gee-box-2 .welcome-em2gee-box-icon i.color-icon,
 .welcome-em2gee-box-3 .welcome-em2gee-box-icon i.color-icon {
   color: #FFFFE0;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .welcome-em2gee-box-details {
   position: relative;
@@ -384,6 +384,15 @@ header.scrolled .logo{
   color: #FFFFE0;
   margin-top: 18vh;
   padding: 7vh;
+}
+.em2gee-records::after {
+   position:absolute;
+  content: " ";
+  display:block;
+  left:-5%;
+  bottom:-10px;
+  transform:rotate(5deg);
+  width:110%;
 }
 .em2gee-records .em2gee-records-details {
   position: relative;
