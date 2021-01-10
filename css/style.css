@@ -220,6 +220,7 @@ header.scrolled .logo{
   -webkit-transition: all 0.3s ease-in-out;
 }
 
+
 /*** WELCOME TO EM2GEE FOODS ***/
 .welcome-em2gee {
   margin-top: 12vh;
@@ -266,17 +267,17 @@ header.scrolled .logo{
 }
 .welcome-em2gee-box-2,
 .welcome-em2gee-box-3 {
-  background-color: rgba(38, 40, 44, 0.95);
+  background-color: rgba(0,0,0,0.9);
   color: #FFFFE0;
-  /*transition: all 0.2s ease-in-out;*/
-  /*-webkit-transition: all 0.2s ease-in-out;*/
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
 }
 .welcome-em2gee-box-2.bg-red,
 .welcome-em2gee-box-3.bg-red {
   background-color: rgba(255, 0, 0, 0.95);
   color: #FFFFE0;
-  /*transition: all 0.2s ease-in-out;*/
-  /*-webkit-transition: all 0.2s ease-in-out;*/
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
 }
 .welcome-em2gee-box-icon i {
   color: red;
@@ -384,15 +385,6 @@ header.scrolled .logo{
   color: #FFFFE0;
   margin-top: 18vh;
   padding: 7vh;
-}
-.em2gee-records::after {
-   position:absolute;
-  content: " ";
-  display:block;
-  left:-5%;
-  bottom:-10px;
-  transform:rotate(5deg);
-  width:110%;
 }
 .em2gee-records .em2gee-records-details {
   position: relative;
@@ -518,7 +510,7 @@ header.scrolled .logo{
  color: #FFFFE0;
 }
 .page-hero-img-text div span {
-  color: rgba(255, 255, 224, 0.62);
+  color: rgba(192,192,192,.8);
 }
 /*** END OF PAGE INTRO [BRIDGE] ***/
 
@@ -603,9 +595,23 @@ header.scrolled .logo{
 }
 .main-team-members .team-members-container .card {
   background-color: rgba(255,255,255,0.45);
-  box-shadow: 0px 5px 17px -7px rgba(1, 1, 1, 0.55);
+  box-shadow: 0px 5px 17px -7px rgba(1, 1, 1, 0.55),
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11);
   /*border: none;*/
   margin-bottom: 5vh;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.main-team-members .team-members-container .card.box-shadow-deep {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
 }
 .main-team-members .team-member-content {
   /*cursor: pointer;*/
@@ -636,14 +642,14 @@ header.scrolled .logo{
   /*letter-spacing: 2px;*/
 }
 .main-team-members .team-member-content hr {
-  width: 40%;
+  width: 20%;
   margin: 0 auto;
   border: 2px solid red;
   transition: all 0.4s ease-out;
   -webkit-transition: all 0.4s ease-out;
 }
 .main-team-members .team-member-content hr.hr-border {
-  width: 25%;
+  width: 12%;
   margin: 0 auto;
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
@@ -701,13 +707,19 @@ header.scrolled .logo{
   background-color: rgba(255,255,255,0.45);
   padding-top: 5vh;
   padding-bottom: 5vh;
-  box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
 }
 .contact-address-container {
   cursor: pointer;
 }
 .contact-address-container i {
   color: red;
+  padding-bottom: 5px;
 }
 .contact-address-container p {
   font-size: 1.5rem;
@@ -749,14 +761,20 @@ header.scrolled .logo{
 
 /*** FOOTER ***/
 footer {
-  background-color: rgb(38, 40, 44);
-  color: rgb(255, 255, 224);
+  background-color: rgba(0,0,0,0.9);
+  color: rgba(255, 255, 224, 0.7);
   font-size: 1.2rem;
   overflow: hidden;
 }
 footer .footer-1 {
   background-color: rgba(255, 255, 224, 0.05);
-  /*margin-top: 0.5vh;*/
+  /*margin-top: 5vh;*/
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
 }
 footer .footer-1 .container {
   margin: auto;
@@ -769,11 +787,54 @@ footer .footer-1 .brief-widget-img {
 footer .footer-1 .brief-widget-img img {
   width: 40%;
 }
-footer .footer-1 .footer-contact-heading {
+footer .footer-1 h4.h4 {
+  display: block;
+  color: #FFFFE0;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding-bottom: 1vh;
+}
+footer .footer-1 h4.h4:after {
+  /*content:'';
+  position: absolute;
+  display: block;
+  width: 5%;
+  border-bottom: 2px solid red;*/
+}
+footer .footer-1 .important-links {
+  display: grid;
+  grid-template-columns: 5rem 5rem;
+}
+footer .footer-1 .important-links ul {
+  padding: 0;
+  margin: 0;
+}
+footer .footer-1 .important-links ul li {
   display: block;
   line-height: normal;
-  font-weight: bold;
-  padding-bottom: 2vh;
+  list-style: none;
+}
+footer .footer-1 .important-links ul li a {
+  color: inherit;
+}
+footer .important-links .links-1 ul li:nth-child(2),
+footer .important-links .links-2 ul li:nth-child(2) {
+  padding-top: 1.3vh;
+}
+footer .connect-us-wrapper {
+  margin-top: 5vh;
+}
+footer .connect-us-wrapper .connect-icon {
+  padding-right: .8rem;
+  line-height: normal;
+}
+footer .connect-us-wrapper .connect-icon i {
+  color: red;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+footer .connect-us-wrapper .connect-icon i:hover {
+  color: rgba(255, 255, 224, 0.7);
 }
 footer .footer-1 .widget-contact-info ul {
   padding: 0;
@@ -781,8 +842,6 @@ footer .footer-1 .widget-contact-info ul {
 }
 footer .footer-1 .widget-contact-info ul li {
   display: block;
-  padding-bottom: 0;
-  margin-bottom: 10px;
   line-height: normal;
   list-style: none;
 }
@@ -791,60 +850,31 @@ footer .footer-1 .widget-contact-info ul li>span {
 }
 footer .footer-1 .widget-contact-info .contact-info-icon {
   color: red;
-  padding-top: 4px;
   padding-right: 10px;
-  /*vertical-align: top;*/
+  vertical-align: top;
 }
-footer .footer-1 .widget-contact-info .contact-info-heading {
+footer .footer-1 .contact-info-content h5 {
   display: block;
   font-size: 18px;
+  letter-spacing: 1px;
   line-height: normal;
   font-weight: bold;
   margin-bottom: 5px;
-}
-footer .footer-1 .widget-contact-info .contact-info-details {
-  line-height: 24px;
-}
-footer .footer-1 .widget-box {
-  background-color: red;
-  border-radius: 5px;
-}
-footer .footer-1 .widget-box .widget-box-details a {
-  background-color: rgb(255, 255, 224);
-  color: red;
-  font-weight: bold;
-  border-radius: 25%;
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-}
-footer .footer-1 .widget-box .widget-box-details a:hover {
-  padding-left: 20px;
-  padding-right: 20px;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-footer .footer-2 {
-  margin: auto;
-  margin-top: 3.5vh;
-  margin-bottom: 2vh;
 }
 footer .footer-2 p span {
   font-family: 'Acme', sans-serif;
   vertical-align: middle;
 }
-footer .footer-2 .phealipto a {
-  color: rgb(255, 255, 224); 
-}
-footer .connect .connect-icon {
-  padding-right: 5px;
-}
-.connect .connect-icon i {
-  color: red;
+footer .footer-2 a {
+  color: rgba(255, 255, 224, 0.7);
   transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
 }
-.connect .connect-icon i:hover {
-  color: #FFFFE0;
+footer .footer-2 a:hover {
+  color: rgb(255, 255, 224);
+  text-decoration: underline;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
 }
 /*** END FOOTER ***/
 
@@ -871,9 +901,9 @@ footer .connect .connect-icon {
   .welcome-em2gee-box-3 {
     margin-top: 5vh;
   }
-  footer .footer-1 .col-sm .brief-widget, 
-  footer .footer-1 .col-sm .footer-contact {
-    margin-bottom: 50px;
+  footer .footer-1 .brief-widget,
+  footer .footer-1 .links-connect {
+    margin-bottom: 40px;
   }
 
   /*About Us*/
@@ -900,9 +930,9 @@ footer .connect .connect-icon {
 
 /*Small devices {sm} (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
-  footer .footer-1 .col-sm .brief-widget, 
-  footer .footer-1 .col-sm .footer-contact {
-    margin-bottom: 50px;
+  footer .footer-1 .brief-widget,
+  footer .footer-1 .links-connect {
+    margin-bottom: 40px;
   }
 }
 

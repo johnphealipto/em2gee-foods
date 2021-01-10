@@ -49,16 +49,19 @@ $(document).ready(function() {
       $(".ceo .team-member-img").toggleClass('img-border');
       $(".ceo hr").toggleClass('hr-border');
       $(".ceo p").toggleClass('text-red');
+      $(".ceo").toggleClass('box-shadow-deep');
    });
    $(".main-team-members .cfo").hover(function() {
       $(".cfo .team-member-img").toggleClass('img-border');
       $(".cfo hr").toggleClass('hr-border');
       $(".cfo p").toggleClass('text-red');
+      $(".cfo").toggleClass('box-shadow-deep');
    });
    $(".main-team-members .coo").hover(function() {
       $(".coo .team-member-img").toggleClass('img-border');
       $(".coo hr").toggleClass('hr-border');
       $(".coo p").toggleClass('text-red');
+      $(".coo").toggleClass('box-shadow-deep');
    });
 
 
