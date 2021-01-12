@@ -177,11 +177,11 @@ header.scrolled .logo{
   top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation-name: caption;
+  /*animation-name: caption;
   animation-duration: 5s;
-  animation-delay: -3s;
+  animation-delay: -3s;*/
 }
-@keyframes caption {
+/*@keyframes caption {
   0% {
     opacity: 0;
     top: 0%;
@@ -198,7 +198,7 @@ header.scrolled .logo{
     opacity: 1;
     top: 47%;
   }
-}
+}*/
 .hero-carousel .carousel-caption p {
   color: #FFFFE0;
   font-size: 3.2rem;
@@ -342,11 +342,13 @@ header.scrolled .logo{
   color: #FFFFE0;
 }
 .brief-info .brief-info-btn i {
-  display: none;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
-.brief-info .brief-info-btn i.show-arrow {
-  display: inline-block;
-  position: relative;
+.brief-info .brief-info-btn i.adjust-arrow {
+  padding-left: 5px;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .brief-info .brief-info-img {
   position: relative;
@@ -759,6 +761,30 @@ header.scrolled .logo{
 
 
 
+
+/*** PRE-FOOTER ***/
+.pre-footer-wrapper {
+  position: relative;
+  margin-bottom: -6.5vh;
+  z-index: 5;
+}
+.pre-footer-content {
+  background-color: red;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
+}
+.pre-footer-content h2 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-weight: bold;
+}
+
+
 /*** FOOTER ***/
 footer {
   background-color: rgba(0,0,0,0.9);
@@ -768,7 +794,7 @@ footer {
 }
 footer .footer-1 {
   background-color: rgba(255, 255, 224, 0.05);
-  /*margin-top: 5vh;*/
+  margin-top: 11.5vh;
   box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
               0 2px 2px rgba(0,0,0,0.11), 
               0 4px 4px rgba(0,0,0,0.11), 
@@ -867,14 +893,6 @@ footer .footer-2 p span {
 }
 footer .footer-2 a {
   color: rgba(255, 255, 224, 0.7);
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
-}
-footer .footer-2 a:hover {
-  color: rgb(255, 255, 224);
-  text-decoration: underline;
-  transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
 }
 /*** END FOOTER ***/
 

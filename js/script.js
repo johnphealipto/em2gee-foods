@@ -31,7 +31,7 @@ $(document).ready(function() {
 
    // BRIEF INFO BUTTON ICON
    $(".brief-info-btn button").hover(function() {
-      $(".brief-info-btn button i").toggleClass('show-arrow');
+      $(".brief-info-btn button i").toggleClass('adjust-arrow');
    });
 
 
