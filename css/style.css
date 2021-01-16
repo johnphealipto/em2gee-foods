@@ -765,7 +765,7 @@ header.scrolled .logo{
 /*** PRE-FOOTER ***/
 .pre-footer-wrapper {
   position: relative;
-  margin-bottom: -6vh;
+  margin-bottom: -4.5vh;
   z-index: 5;
 }
 .pre-footer-wrapper .pre-footer-img {
@@ -964,3 +964,16 @@ footer .footer-2 a {
 
 /*Extra large devices {xl} (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {} 
+
+
+
+
+/* Very Small Width Devices */
+@media (max-width: 340.98px) {
+
+  /*** QUICK CONTACT ***/
+  .quick-contact a {
+    font-size: 0.65rem;
+  }
+  /*** END QUICK CONTACT ***/
+}
