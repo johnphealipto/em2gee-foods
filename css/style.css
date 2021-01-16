@@ -512,7 +512,7 @@ header.scrolled .logo{
  color: #FFFFE0;
 }
 .page-hero-img-text div span {
-  color: rgba(192,192,192,.8);
+  color: rgba(255, 255, 224,.6);
 }
 /*** END OF PAGE INTRO [BRIDGE] ***/
 
@@ -770,7 +770,7 @@ header.scrolled .logo{
 }
 .pre-footer-wrapper .pre-footer-img {
   background-color: #ff0504;
-  width: 13.5vh;
+  width: 11vh;
   margin: 0 auto;
   border-radius: 50%;
   box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
@@ -780,8 +780,9 @@ header.scrolled .logo{
 }
 .pre-footer-wrapper .pre-footer-img img {
   width: 100%;
-  padding: 3vh;
+  padding: 2vh;
 }
+
 
 /*** FOOTER ***/
 footer {
