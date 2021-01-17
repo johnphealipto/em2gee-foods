@@ -211,11 +211,11 @@ header.scrolled .logo{
   font-size: 1.5rem;
   border: none;
   /*box-shadow: 2px 2px 9px #000;*/
-  transition: all 0.4s ease-out;
-  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
 }
 .hero-carousel .carousel-caption button:hover {
-  transform: scale(1.05);
+  transform: scaleX(1.1);
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
 }
@@ -322,7 +322,7 @@ header.scrolled .logo{
 
 /*** BRIEF INFO ***/
 .brief-info {
-  margin-top: 16vh;
+  margin-top: 20vh;
 }
 .brief-info .brief-info-details {
   margin-bottom: 6.1vh;
@@ -567,16 +567,19 @@ header.scrolled .logo{
 
 /*The three core aim*/
 .about-three-core {
-  background-color: red;
-  color: #FFFFE0;
+  background-color: rgba(0,0,0,0.02);
+  color: #000;
   margin-top: 18vh;
   padding: 7vh;
 }
 .about-three-core .about-three-core-details {
   text-align: center;
 }
-.about-three-core .about-three-core-details h2 {
+.about-three-core .about-three-core-details h1 {
   font-weight: bold;
+}
+.about-three-core .about-three-core-details p {
+  font-size: 1.4rem;
 }
 
 /* Team Members */
@@ -668,6 +671,59 @@ header.scrolled .logo{
   -webkit-transition: all 0.3s ease-out;
 }
 /********** END ABOUT US **********/
+
+
+
+/********** OUR PRODUCTS **********/
+.our-products {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+.our-products-header {
+  text-align: center;
+}
+.our-products-header h1 {
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+.our-products-header h1:after {
+  /*content: ""; 
+  display: block;
+  width: 5%;
+  margin: 3.5vh auto;
+  border-bottom: 4px solid red;*/
+}
+.our-products-content {
+  margin-top: 15vh;
+}
+.our-products-content .our-products-details {
+  margin-top: 12vh;
+}
+.our-products-details h1 {
+  font-weight: bold;
+  margin-bottom: -1vh;
+}
+.our-products-details p {
+  font-size: 1.4rem;
+}
+.our-products-details-img {
+  position: relative;
+  width: 40vh;
+  /*text-align: center;*/
+}
+.our-products-details-img img {
+  width: 100%;
+}
+.our-products-details .nutrition-ingrdients h4 {
+  font-weight: bold;
+}
+.our-products-details .nutrition-ingrdients ul {
+  margin-left: 7vh; 
+}
+.our-products-details .nutrition-ingrdients ul li {
+  font-size: 1.1rem;
+}
+/********** END OUR PRODUCTS **********/
 
 
 
@@ -930,6 +986,14 @@ footer .footer-2 a {
   .about-three-core .about-three-core-details {
     padding-top: 5vh;
     padding-bottom: 5vh;
+  }
+
+  /*Products*/
+  .our-products {
+    margin-top: 7vh;
+  }
+  .our-products-content {
+    margin-top: 7vh;
   }
 
   /*Contact HTML*/
