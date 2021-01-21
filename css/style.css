@@ -953,6 +953,35 @@ footer .footer-2 a {
 
 
 
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 1;
+}
+.whatsapp a {
+  text-decoration: none;
+  display: table-cell;
+}
+.whatsapp a i {
+  color: red;
+  line-height: normal;
+}
+.whatsapp a span {
+  background-color: rgba(0,0,0,0.9);
+  color: #FFFFE0;
+  border-radius: 10px;
+  position: relative;
+  bottom: 2.2vh;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11), 
+              0 16px 16px rgba(0,0,0,0.11), 
+              0 32px 32px rgba(0,0,0,0.11);
+}
+
+
 /*** MEDIA QUERIES ***/
 /*No media query for `xs` since this is the default in Bootstrap*/
 
