@@ -45,20 +45,98 @@ html, body {
 header {
   position: relative;
   background-color: #FFFFE0;
-  margin-top: -10px;
-  margin-bottom: -17px;
+  height: 90px;
+  z-index: 50;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -9px;
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
-header img {
-  width: 78%;
+header .site-head-logo img {
+  width: 25%;
+  padding: .3rem;
+  margin-top: -.3rem;
   transition: 0.5s;
 }
-header.scrolled img {
-  /*width: 80%;*/
+header.fixed {
+  position: fixed;
+  top:0; 
+  left:0;
+  height: 90px;
+  padding-top: 2.5vh;
+  width: 100%;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 8px 8px rgba(0,0,0,0.11);
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
-header.scrolled .logo{
-  position:relative;
-  /*top:10px;
-  left:0;*/
+header.fixed .site-head-logo img {
+  width: 22%;
+  padding: .7rem;
+  margin-top: -.6rem;
+}
+header.fixed .ul-menu ul li a {
+  font-size: 1.3rem;
+}
+header .ul-menu {
+  position: relative;
+  /*line-height: normal;*/
+}
+header .ul-menu ul { 
+  list-style-type: none;
+  text-align: right;
+}
+header .ul-menu ul li { 
+    display: inline-block;
+    margin-left: 35px;
+}
+header .ul-menu ul li a {
+  text-decoration: none; 
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 550;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+header .ul-menu ul li a:hover {
+  font-weight: bold;
+  transition: 0.4s ease all;
+}
+header .ul-menu ul li a:after {
+  content: ""; 
+  display: block;
+  width: 0;
+  margin: -7px auto;
+  border-bottom: 2px solid red;
+  transform: scaleX(0);
+  -webkit-transition: .25s linear;
+  -o-transition: .25s linear;
+  transition: .25s linear;
+}
+header .ul-menu ul li a:hover:after {
+  width: 75%; 
+  transition: 0.4s ease all;
+  transform: scaleX(1.2);
+}
+header .ul-menu ul li a.active {
+  font-weight: bold;
+}
+header .ul-menu ul li a.active:after {
+  content: ""; 
+  display: block;
+  width: 80%;
+  margin: -7px auto;
+  border-bottom: 2px solid red;
+  transform: scaleX(1.2);
+  -webkit-transition: .25s linear;
+  -o-transition: .25s linear;
+  transition: .25s linear;
 }
 .menu-btn {
   position: absolute;
@@ -155,9 +233,9 @@ header.scrolled .logo{
 /********** HOME **********/
 /*** HERO CAROUSEL ***/
 .hero-carousel {
-  padding-top: 50px 0;
+  /*padding-top: 50px 0;*/
   position: relative;
-  margin: 30px 0;
+  /*margin: 30px 0;*/
 }
 .hero-carousel .carousel-item {
   max-height: 520px;
@@ -251,6 +329,10 @@ header.scrolled .logo{
   position: relative;
   border-radius: 5px;
   padding: 5vh;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.08), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.16), 
+              0 8px 8px rgba(0,0,0,0.20);
 }
 .welcome-em2gee-box-1 {
   background-color: red;
@@ -567,10 +649,16 @@ header.scrolled .logo{
 
 /*The three core aim*/
 .about-three-core {
-  background-color: rgba(0,0,0,0.02);
+  background-color: rgba(0,0,0,0.01);
   color: #000;
   margin-top: 18vh;
   padding: 7vh;
+  -moz-box-shadow:  0 5px 10px rgba(0,0,0,0.25),
+                    0 -5px 10px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.25),
+                      0 -5px 10px rgba(0,0,0,0.25);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.25),
+              0 -5px 10px rgba(0,0,0,0.25);
 }
 .about-three-core .about-three-core-details {
   text-align: center;
@@ -957,7 +1045,7 @@ footer .footer-2 a {
   position: fixed;
   bottom: 30px;
   left: 30px;
-  z-index: 1;
+  z-index: 50;
 }
 .whatsapp a {
   text-decoration: none;
@@ -968,11 +1056,12 @@ footer .footer-2 a {
   line-height: normal;
 }
 .whatsapp a span {
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgb(0,0,0);
   color: #FFFFE0;
-  border-radius: 10px;
+  border-radius: 6px;
   position: relative;
   bottom: 2.2vh;
+  padding: 0.6rem 0.7rem;
   box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
               0 2px 2px rgba(0,0,0,0.11), 
               0 4px 4px rgba(0,0,0,0.11), 

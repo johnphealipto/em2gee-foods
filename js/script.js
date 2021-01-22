@@ -8,6 +8,18 @@ AOS.init({
 
 $(document).ready(function() {
 
+   // FIXED HEADER
+   $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if (scroll >= 400){
+         $("header").addClass('fixed');
+      } 
+      else{
+         $("header").removeClass('fixed');
+      }
+   });
+
+
    // MENU BUTTON FUNCTION
 	$(".hamburger").click(function() {
    	$(this).toggleClass("is-active");
@@ -63,16 +75,5 @@ $(document).ready(function() {
       $(".coo p").toggleClass('text-red');
       $(".coo").toggleClass('box-shadow-deep');
    });
-
-
-   // $(window).scroll(function(){
-   //    var scroll = $(window).scrollTop();
-   //    if (scroll > 0){
-   //       $("header").addClass('scrolled');
-   //    } 
-   //    else{
-   //       $("header").removeClass('scrolled');
-   //    }
-   // });
    
 });
