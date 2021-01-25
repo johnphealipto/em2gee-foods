@@ -47,6 +47,29 @@ $(document).ready(function() {
    });
 
 
+   // SPECIALS
+   $(".em2gee-specials-content .sp-1").hover(function() {
+      $(".em2gee-specials-content .sp-1 .em2gee-specials-img").toggleClass("border-curve");
+      $(".em2gee-specials-content .sp-1 .em2gee-specials-details p").toggleClass("color-red");      
+   });
+   $(".em2gee-specials-content .sp-2").hover(function() {
+      $(".em2gee-specials-content .sp-2 .em2gee-specials-img").toggleClass("border-curve");
+      $(".em2gee-specials-content .sp-2 .em2gee-specials-details p").toggleClass("color-red");      
+   });
+   $(".em2gee-specials-content .sp-3").hover(function() {
+      $(".em2gee-specials-content .sp-3 .em2gee-specials-img").toggleClass("border-curve");
+      $(".em2gee-specials-content .sp-3 .em2gee-specials-details p").toggleClass("color-red");      
+   });
+   $(".em2gee-specials-content .sp-4").hover(function() {
+      $(".em2gee-specials-content .sp-4 .em2gee-specials-img").toggleClass("border-curve");
+      $(".em2gee-specials-content .sp-4 .em2gee-specials-details p").toggleClass("color-red");      
+   });
+   $(".em2gee-specials-content .sp-5").hover(function() {
+      $(".em2gee-specials-content .sp-5 .em2gee-specials-img").toggleClass("border-curve");
+      $(".em2gee-specials-content .sp-5 .em2gee-specials-details p").toggleClass("color-red");      
+   });
+
+
    // CONTACT US
    $(".contact-address-location").hover(function() {
       // $(".fa-map-marker-alt").toggleClass('fa-4x');

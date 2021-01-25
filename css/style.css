@@ -28,6 +28,7 @@ html, body {
 .quick-contact a {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.8rem;
+  font-weight: 500;
   color: #000;
   text-decoration: none;
   transition: all 0.3s ease-out;
@@ -530,6 +531,14 @@ header .ul-menu ul li a.active:after {
   margin: 0 auto 4vh auto;
   border-radius: 20%;
   overflow: hidden;
+  /*border: 5px solid red;*/
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.em2gee-specials-img.border-curve { 
+  border-radius: 30%;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 .em2gee-specials-img img {
   width: 100%;
@@ -539,7 +548,14 @@ header .ul-menu ul li a.active:after {
 }
 .em2gee-specials-details p {
   font-size: 1.05rem;
-  padding: 1vh 5vh;
+  padding: 1vh 1vh;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+.em2gee-specials-details p.color-red {
+  color: red;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
 }
 
 /*** Cooking Pleasure ***/
