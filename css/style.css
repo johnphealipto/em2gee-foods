@@ -542,6 +542,7 @@ header .ul-menu ul li a.active:after {
 }
 .em2gee-specials-img img {
   width: 100%;
+  /*overflow: hidden;*/
 }
 .em2gee-specials-details {
   text-align: center;
